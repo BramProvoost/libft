@@ -6,7 +6,7 @@
 /*   By: bprovoos <bprovoos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/12 19:23:03 by bprovoos      #+#    #+#                 */
-/*   Updated: 2021/10/19 17:39:46 by bprovoos      ########   odam.nl         */
+/*   Updated: 2021/11/05 16:19:15 by bprovoos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	*ft_realloc(void *ptr, size_t size)
 {	
 	void	*temp;
 
-	if (ptr == NULL)
-		return (ft_calloc(1, size));
 	temp = ft_calloc(1, size);
+	if (ptr == NULL)
+		return (temp);
 	ft_strlcpy(temp, ptr, size);
 	free(ptr);
 	return (temp);

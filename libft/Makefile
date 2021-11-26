@@ -100,6 +100,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean bonus fclean re
-
-ft_strlen:
-	doning stuff
