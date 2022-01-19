@@ -6,7 +6,7 @@
 /*   By: bramjr <bramjr@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/12 14:11:40 by bramjr        #+#    #+#                 */
-/*   Updated: 2021/09/22 08:47:13 by bprovoos      ########   odam.nl         */
+/*   Updated: 2022/01/19 08:24:18 by bprovoos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
-	if (!dst || !src)
-		return (0);
 	if (dstsize < 1)
 	{
 		while (src[i])
