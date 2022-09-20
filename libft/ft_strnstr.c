@@ -6,7 +6,7 @@
 /*   By: bramjr <bramjr@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 14:56:59 by bramjr        #+#    #+#                 */
-/*   Updated: 2021/05/27 18:05:14 by bprovoos      ########   odam.nl         */
+/*   Updated: 2022/09/20 17:55:20 by bprovoos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *source, const char *to_find, size_t n)
 	size_t	j;
 
 	i = 0;
-	if (!to_find[0])
+	if (!to_find[0] || !n)
 		return ((char *)source);
 	while (source[i])
 	{

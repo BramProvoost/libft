@@ -6,7 +6,7 @@
 /*   By: bramjr <bramjr@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/17 16:06:24 by bramjr        #+#    #+#                 */
-/*   Updated: 2021/05/27 17:54:52 by bprovoos      ########   odam.nl         */
+/*   Updated: 2022/09/20 18:04:03 by bprovoos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,15 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
 
-	while (*lst)
+	if (lst && del)
 	{
-		temp = *lst;
-		(*del)((*lst)->content);
-		*lst = (*lst)->next;
-		free(temp);
+		while (*lst)
+		{
+			temp = *lst;
+			(*del)((*lst)->content);
+			*lst = (*lst)->next;
+			free(temp);
+		}
+		*lst = NULL;
 	}
-	*lst = NULL;
 }
