@@ -6,7 +6,7 @@
 #    By: bprovoos <bprovoos@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/01/19 08:27:15 by bprovoos      #+#    #+#                  #
-#    Updated: 2022/10/21 12:29:57 by bprovoos      ########   odam.nl          #
+#    Updated: 2022/10/21 16:12:00 by bprovoos      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,8 @@ SRCS		= ft_isalpha.o $\
 			  ft_strtolower.o $\
 			  ft_strtoupper.o $\
 			  ft_strlendump.o $\
-			  ft_realloc.o
+			  ft_realloc.o $\
+			  ft_str_is_num.o
 BONUSSRCS	= ft_lstnew.o $\
 			  ft_lstadd_front.o $\
 			  ft_lstsize.o $\

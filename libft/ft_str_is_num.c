@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strlen.c                                        :+:    :+:            */
+/*   ft_str_is_num.c                                    :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: bramjr <bramjr@student.codam.nl>             +#+                     */
+/*   By: bprovoos <bprovoos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/29 11:11:18 by bramjr        #+#    #+#                 */
-/*   Updated: 2022/10/21 16:09:28 by bprovoos      ########   odam.nl         */
+/*   Created: 2022/10/21 16:05:43 by bprovoos      #+#    #+#                 */
+/*   Updated: 2022/10/21 16:13:52 by bprovoos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *str)
+int	ft_str_is_num(char *str)
 {
 	size_t	counter;
 
 	counter = 0;
 	while (str[counter])
+	{
+		if (!ft_isdigit(str[counter]))
+			return (0);
 		counter++;
-	return (counter);
+	}
+	return (1);
 }

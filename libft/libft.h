@@ -6,7 +6,7 @@
 /*   By: bprovoos <bprovoos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 15:21:40 by bprovoos      #+#    #+#                 */
-/*   Updated: 2022/10/14 16:44:52 by bprovoos      ########   odam.nl         */
+/*   Updated: 2022/10/21 16:12:20 by bprovoos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+int		ft_str_is_num(char *str);
 // void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
